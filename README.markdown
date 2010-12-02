@@ -3,15 +3,25 @@
 3. Download and install somewhere nginx for windows
 4. At <nginx instalation path>/conf copy file nginx.conf with name pooh.conf
 Inside this file change
+
     root   html;
+    
 into
+
     root   <path where repository clonned>/output;
+    
 Change
+
     listen 80;
+    
 into
+
     listen 8000;
+    
 5. At <nginx instalation path> create file run_pooh.cmd and write inside
+
     nginx.exe -c conf\pooh.conf
+    
 6. Run this file and you can access site inside browser http://localhost:8000/pooh
 7. At <path where repository clonned> look at gen.py to read pretty comments))))
 8. Install Python 2.6 from http://python.org (maybe 2.7 works too but I've not tried)
