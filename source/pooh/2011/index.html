@@ -1,0 +1,116 @@
+<%def name="page_id()">main</%def>
+<%inherit file="template.mako" />
+<div>
+
+<div class="news" style="clear:left;">
+<span class='date'>30.11.2010 10:26:25</span>
+<a class="gall" style="clear:right;float:right" href="${PATH('/images/2011/news/sp_ann.jpg')}"><img src="${PATH('/images/2011/news/thumbnails/sp_ann.jpg')}"/></a>
+<h3>От организатора</h3>
+<p>Здравствуйте,</p>
+<p>Меня зовут Анатолий Шустеров.</p>
+<p>Первым делом, хочу сказать «большое спасибо» Мише за организацию ПУХа и за реализацию моей давней мечты. На концерте я выступил, как юморист-разговорник со своими и чужими шутками, плюс сочинял конферанс, от чего получил море радости творчества.</p>
+<p>Я всегда мечтал быть юмористом, ещё с тех незапамятных времён, когда мы с Мишей и другими нашими товарищами по несчастью учились в физ-мат лицее. Я вообще много мечтал, сколько себя помню, когда мы гуляли с родителями, то я придумывал несколько историй, компьютерных игр и много чего ещё за одно прогулку. Так я всё мечтал и мечтал, а жизнь шла и шла, я закончил школу, поступил в институт, закончил институт, работал, увольняли, снова работал.</p>
+<p>И я постоянно чувствовал тоску, по очень простой причине, мои мечты не сбывались. Нет, не просто не сбывались, я даже минимально не двигался в сторону их сбывания. Но, на самом деле, (хоть я этого и не понимал), это чувство и было первым маленьким шагом.</p>
+<p>Дальше было бы логично сказать «В один прекраснай день всё изменилось…». Но нет, не было никаких салютов и криков «ура», просто я понял, что мечты можно и нужно реализовывать и превращать в цели и стал позволять и заставлять себя это делать.</p>
+<p>Я бы не сказал, что сейчас я полностью собой доволен, но сейчас я точно знаю, что, даже если я не на строго правильном пути, то точно двигаюсь в нужную сторону.</p>
+<p>Закончить хочу цитатой: «Кто хочет - ищет способ, кто не хочет - ищет причину» (Сократ)</p>
+<p>Не придумывайте причин, ищите способы, ищите себя.</p>
+<p>В этом и состоит для меня одна из главных задач ПУХа.</p>
+</div>
+
+<div class="news">
+<span class='date'>10.11.2010 23:15:19</span>
+<h3>Попкорн-политика</h3>
+<p>Судя по некоторым прошлогодним отзывам, вы хотите кушать.</p>
+<p>Мы учли этот момент и дадим вам такую возможность: антракт будет длиться 30 минут, а фаст-фудов рядом — предостаточно:</p>
+<ul>
+<li>Прямо на выходе из концертного зала — общепит вроде «Пузатой хаты»</li>
+<li>Через дорогу — Макдональдс</li>
+<li>Если совсем проголодаетесь, можно зайти в «Здоровеньки Булы» до или после мероприятия (см. карту)</li>
+</ul>
+<script src="http://api-maps.yandex.ru/1.1/?key=AA8_10wBAAAAmfPpTAIAbuSHXBDYTg6iLCq6CwCCBINbTl4AAAAAAAAAAACO18VXaueiJaUjUWBeYoGBcxS6Mw==&wizard=constructor" type="text/javascript"></script>
+<script type="text/javascript">
+    YMaps.jQuery(window).load(function () {
+        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-5019")[0]);
+        map.setCenter(new YMaps.GeoPoint(30.598799,50.450489), 16, YMaps.MapType.MAP);
+        map.addControl(new YMaps.Zoom());
+        map.addControl(new YMaps.ToolBar());
+        map.addControl(new YMaps.TypeControl());
+
+        YMaps.Styles.add("constructor#pmorlPlacemark", {
+            iconStyle : {
+                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmorl.png",
+                size : new YMaps.Point(36,41),
+                offset: new YMaps.Point(-13,-40)
+            }
+        });
+
+
+        YMaps.Styles.add("constructor#pmywlPlacemark", {
+            iconStyle : {
+                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmywl.png",
+                size : new YMaps.Point(36,41),
+                offset: new YMaps.Point(-13,-40)
+            }
+        });
+
+
+        YMaps.Styles.add("constructor#pmgnlPlacemark", {
+            iconStyle : {
+                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmgnl.png",
+                size : new YMaps.Point(36,41),
+                offset: new YMaps.Point(-13,-40)
+            }
+        });
+
+
+        YMaps.Styles.add("constructor#FF3732c85Polyline", {
+            lineStyle : {
+                strokeColor : "FF3732c8",
+                strokeWidth : 5
+            }
+        });
+       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(30.599135,50.451351), "constructor#pmorlPlacemark", "McDonalds"));
+       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(30.600883,50.449078), "constructor#pmywlPlacemark", "Здоровенькі були"));
+       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(30.597018,50.450859), "constructor#pmgnlPlacemark", "Пух и все-все-все!"));
+       map.addOverlay(createObject("Polyline", [new YMaps.GeoPoint(30.59732,50.450824),new YMaps.GeoPoint(30.597986,50.450577),new YMaps.GeoPoint(30.598141,50.450782),new YMaps.GeoPoint(30.598696,50.450775),new YMaps.GeoPoint(30.598524,50.451179),new YMaps.GeoPoint(30.598975,50.451323)], "constructor#FF3732c85Polyline", ""));
+       map.addOverlay(createObject("Polyline", [], "constructor#FF3732c85Polyline", ""));
+       map.addOverlay(createObject("Polyline", [new YMaps.GeoPoint(30.600839,50.448925),new YMaps.GeoPoint(30.600173,50.448644),new YMaps.GeoPoint(30.599659,50.448969),new YMaps.GeoPoint(30.599262,50.449524),new YMaps.GeoPoint(30.598714,50.450728)], "constructor#FF3732c85Polyline", ""));
+
+        function createObject (type, point, style, description) {
+            var allowObjects = ["Placemark", "Polyline", "Polygon"],
+                index = YMaps.jQuery.inArray( type, allowObjects),
+                constructor = allowObjects[(index == -1) ? 0 : index];
+                description = description || "";
+
+            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
+            object.description = description;
+
+            return object;
+        }
+    });
+</script>
+<div id="YMapsID-5019" style="width:400px;height:300px;margin:20px"></div>
+<p>Важно: <b>кушать в зале нельзя</b>. Бутерброды, попкорн, кола и прочие прелести кинотеатров — можно, но только в антракте. Не во время представления.</p>
+</div>
+
+<div class="news">
+<span class='date'>08.11.2010 12:15:16</span>
+<h3>Милые друзья!</h3>
+<p>Год назад мы были и зрителями, и организаторами, и участниками творческого вечера «Винни-Пух и все-все-все!». Нам хотелось поделиться друг с другом вдохновением, и ваши лица были лучшим подтверждением того, что замысел удался и цель достигнута.</p>
+<p>Для каждого этот год был полон чаяний, свершений и поисков, а сейчас пришло время снова собраться на нашей уютной сцене, чтобы порадовать публику новым творчеством и вспомнить уже полюбившееся старое.</>
+<p>С последнего, кстати, начнем:</p>
+<object width="480" height="385"><param name="movie" value="http://www.youtube.com/v/f7ASuJXq6ag?fs=1&amp;hl=ru_RU"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/f7ASuJXq6ag?fs=1&amp;hl=ru_RU" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed></object>
+<p><br>
+Время и место проведения: суббота, 27 ноября, 16:00-20:00, конференц-зал ГК турист (см. <a href="${PATH('/2011/where.html')}">карту</a>).<br>
+Стоимость входа: 20 грн.<br>
+Приходите сами и приводите друзей и семью :)<br>
+</p>
+<p>Искренне ваш, Пух.</p>
+</div>
+
+<script>
+$('a.gall').lightBox();
+</script>
+
+</div>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="/pooh/css/promo.css"/>
+<script type="text/javascript" src="/pooh/js/jquery.js"></script>
+<script>
+$(function() {
+    $('#a2010').hover(
+        function() {
+            $('#back_2010').fadeIn();
+            $('#back_null').fadeOut();
+        },
+        function() {
+            $('#back_2010').fadeOut();
+            $('#back_null').fadeIn();
+        });
+    $('#a2011').hover(
+        function() {
+            $('#back_2011').fadeIn();
+            $('#back_null').fadeOut();
+        },
+        function() {
+            $('#back_2011').fadeOut();
+            $('#back_null').fadeIn();
+        });
+});
+</script>
+</head>
+<body>
+<div class='header'>
+    <div class='holder'>
+        <div id='back_2010'></div>
+        <div id='back_2011'></div>
+        <div id='back_null'></div>
+        <div class='fore'>
+            <a href='/pooh/2010/index.html'><div id='a2010'></div></a>
+            <a href='/pooh/2011/index.html'><div id='a2011'></div></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
