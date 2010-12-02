@@ -2,6 +2,7 @@
 2. Clone my repository from path you can fing above at this page
 3. Download and install somewhere nginx for windows
 4. At <nginx instalation path>/conf copy file nginx.conf with name pooh.conf
+
 Inside this file change
 
     root   html;
@@ -19,6 +20,7 @@ into
     listen 8000;
     
 5. At <nginx instalation path> create file run_pooh.cmd and write inside
+
 
     nginx.exe -c conf\pooh.conf
     
