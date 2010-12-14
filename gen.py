@@ -30,14 +30,15 @@ def factory(filename):
 # function used inside teplates to tell them where is root of their subsite
 # in out case this subside is /pooh
 # so subsite can imagine that it is a root of whole site
-def PATH(p):
-    return site_root(p).str()
+def PATH(*p):
+    return site_root(*p).str()
 
 # distionary of site parts to be generated
 data = {
     Path(['pooh']) : [
         Path(['pooh/2010']),
         Path(['pooh/2011']),
+        Path(['pooh/2011/poll']),
         Path(['pooh/css']),
         ]
     }

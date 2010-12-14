@@ -1,5 +1,13 @@
 <%def name="page_id()">photo</%def>
 <%inherit file="template.mako" />
-<div id='gallery'>
-<h2>Фотографии</h2>
+<div style="padding:40px 0px 20px 25px">
+% for num in range(1, 60):
+<a class="gall" style="float:left" href="${PATH('/images/2011/photo/{0:02d}.jpg'.format(num))}"><img src="${PATH('/images/2011/photo/thumbnails/{0:02d}.jpg'.format(num))}"/></a>
+% endfor
+<p style="clear:left"></p>
+
+<script>
+$('a.gall').lightBox();
+</script>
+
 </div>

@@ -6,7 +6,6 @@ ${self.head()}
 <%def name="head()">
 <title>Пух и все-все-все</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
 <script type="text/javascript" src="${PATH('/js/jquery.js')}"></script>
 <script type="text/javascript" src="${PATH('/js/jquery.lightbox.js')}"></script>
 <link rel="stylesheet" type="text/css" href="${PATH('/css/2011.css')}"/>
@@ -34,9 +33,9 @@ ${self.head()}
                     Программа
                 </span></a><span class='link_video'>
                     Видео
-                </span><span class='link_photo'>
+                </span><a href='photo.html'><span class='link_photo'>
                     Фото
-                </span><a href='where.html'><span class='link_where'>
+                </span></a><a href='where.html'><span class='link_where'>
                     Как добраться?
                 </span></a><a href='contacts.html'><span class='link_cont'>
                     Контакты
