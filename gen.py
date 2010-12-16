@@ -38,7 +38,6 @@ data = {
     Path(['pooh']) : [
         Path(['pooh/2010']),
         Path(['pooh/2011']),
-        Path(['pooh/2011/poll']),
         Path(['pooh/css']),
         ]
     }

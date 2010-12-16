@@ -44,12 +44,13 @@ body {
 }
 
 .btn_main_head  {   width:  15px;   background-image: url(/pooh/images/2011/green_main.png);  }
-.btn_main       {   width: 129px;   background-image: url(/pooh/images/2011/green.png);       }
-.btn_prog       {   width: 179px;   background-image: url(/pooh/images/2011/green.png);       }
-.btn_video      {   width: 135px;   background-image: url(/pooh/images/2011/green.png);       }
-.btn_photo      {   width: 123px;   background-image: url(/pooh/images/2011/green.png);       }
-.btn_where      {   width: 201px;   background-image: url(/pooh/images/2011/green.png);       }
-.btn_cont       {   width: 152px;   background-image: url(/pooh/images/2011/green.png);       }
+.btn_main       {   width: 97px;    background-image: url(/pooh/images/2011/green.png);       }
+.btn_prog       {   width: 155px;   background-image: url(/pooh/images/2011/green.png);       }
+.btn_video      {   width: 112px;   background-image: url(/pooh/images/2011/green.png);       }
+.btn_photo      {   width: 106px;   background-image: url(/pooh/images/2011/green.png);       }
+.btn_poll       {   width: 155px;   background-image: url(/pooh/images/2011/green.png);       }
+.btn_where      {   width: 180px;   background-image: url(/pooh/images/2011/green.png);       }
+.btn_cont       {   width: 112px;   background-image: url(/pooh/images/2011/green.png);       }
 .btn_cont_tail  {   width:  15px;   background-image: url(/pooh/images/2011/green_cont.png);  }
 
 .at_main    .btn_main_head  {   background-image: url(/pooh/images/2011/orange_main.png); }
@@ -57,6 +58,7 @@ body {
 .at_prog    .btn_prog       {   background-image: url(/pooh/images/2011/orange.png);      }
 .at_video   .btn_video      {   background-image: url(/pooh/images/2011/orange.png);      }
 .at_photo   .btn_photo      {   background-image: url(/pooh/images/2011/orange.png);      }
+.at_poll    .btn_poll       {   background-image: url(/pooh/images/2011/orange.png);      }
 .at_where   .btn_where      {   background-image: url(/pooh/images/2011/orange.png);      }
 .at_cont    .btn_cont       {   background-image: url(/pooh/images/2011/orange.png);      }
 .at_cont    .btn_cont_tail  {   background-image: url(/pooh/images/2011/orange_cont.png); }
@@ -70,12 +72,13 @@ body {
     z-index: 30;
 }
 
-.link_main   { width: 144px;    color: #495257; }
-.link_prog   { width: 179px;    color: #495257; }
-.link_video  { width: 135px;    color: #aaa;    }
-.link_photo  { width: 123px;    color: #495257; }
-.link_where  { width: 201px;    color: #495257; }
-.link_cont   { width: 167px;    color: #495257; }
+.link_main   { width: 112px;    color: #495257; }
+.link_prog   { width: 155px;    color: #495257; }
+.link_video  { width: 112px;    color: #aaa;    }
+.link_photo  { width: 106px;    color: #495257; }
+.link_poll   { width: 155px;    color: #495257; }
+.link_where  { width: 180px;    color: #495257; }
+.link_cont   { width: 127px;    color: #495257; }
 
 .links span {
     display: inline-block;
@@ -150,6 +153,12 @@ div.news {
 
 .ljicon {
     background:transparent url(/pooh/images/ljicon.png) no-repeat scroll 0 0;
+    padding-left:24px;
+    text-align:left;
+}
+
+.weblink {
+    background:transparent url(/pooh/images/firefox.png) no-repeat scroll 0 0;
     padding-left:24px;
     text-align:left;
 }

@@ -3,7 +3,7 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 5
-_modified_time = 1292100780.73
+_modified_time = 1292461654.938
 _template_filename='D:/Work/Distributives/pooh/source/pooh/2011/template.mako'
 _template_uri='/pooh/2011/template.mako'
 _template_cache=cache.Cache(__name__, _modified_time)
@@ -26,8 +26,8 @@ def render_body(context,**pageargs):
         __M_writer(u"\n</head>\n<body>\n<div class='main'>\n    <div class='holder'>\n        <div class='head'></div>\n        <div class='buttons at_")
         # SOURCE LINE 19
         __M_writer(unicode(self.page_id()))
-        __M_writer(u"'>\n                   <span class='btn_main_head'>\n            </span><span class='btn_main'>\n            </span><span class='btn_prog'>\n            </span><span class='btn_video'>\n            </span><span class='btn_photo'>\n            </span><span class='btn_where'>\n            </span><span class='btn_cont'>\n            </span><span class='btn_cont_tail'>\n            </span>\n            <div class='links'>\n                       <a href='index.html'><span class='link_main'>\n                    \u0413\u043b\u0430\u0432\u043d\u0430\u044f\n                </span></a><a href='programm.html'><span class='link_prog'>\n                    \u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430\n                </span></a><span class='link_video'>\n                    \u0412\u0438\u0434\u0435\u043e\n                </span><a href='photo.html'><span class='link_photo'>\n                    \u0424\u043e\u0442\u043e\n                </span></a><a href='where.html'><span class='link_where'>\n                    \u041a\u0430\u043a \u0434\u043e\u0431\u0440\u0430\u0442\u044c\u0441\u044f?\n                </span></a><a href='contacts.html'><span class='link_cont'>\n                    \u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b\n                </span></a>\n            </div>\n        </div>\n        <div id='content'>")
-        # SOURCE LINE 45
+        __M_writer(u"'>\n                   <span class='btn_main_head'>\n            </span><span class='btn_main'>\n            </span><span class='btn_prog'>\n            </span><span class='btn_video'>\n            </span><span class='btn_photo'>\n            </span><span class='btn_poll'>\n            </span><span class='btn_where'>\n            </span><span class='btn_cont'>\n            </span><span class='btn_cont_tail'>\n            </span>\n            <div class='links'>\n                       <a href='index.html'><span class='link_main'>\n                    \u0413\u043b\u0430\u0432\u043d\u0430\u044f\n                </span></a><a href='programm.html'><span class='link_prog'>\n                    \u041f\u0440\u043e\u0433\u0440\u0430\u043c\u043c\u0430\n                </span></a><span class='link_video'>\n                    \u0412\u0438\u0434\u0435\u043e\n                </span><a href='photo.html'><span class='link_photo'>\n                    \u0424\u043e\u0442\u043e\n                </span></a><a href='poll.html'><span class='link_poll'>\n                    \u0413\u043e\u043b\u043e\u0441\u043e\u0432\u0430\u043d\u0438\u0435\n                </span></a><a href='where.html'><span class='link_where'>\n                    \u041a\u0430\u043a \u0434\u043e\u0431\u0440\u0430\u0442\u044c\u0441\u044f?\n                </span></a><a href='contacts.html'><span class='link_cont'>\n                    \u041a\u043e\u043d\u0442\u0430\u043a\u0442\u044b\n                </span></a>\n            </div>\n        </div>\n        <div id='content'>")
+        # SOURCE LINE 48
         __M_writer(unicode(self.body()))
         __M_writer(u"</div>\n        <div class='footer'></div>\n    </div>\n</div>\n</body>\n</html>")
         return ''

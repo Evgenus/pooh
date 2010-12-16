@@ -1,0 +1,118 @@
+<%def name="page_id()">poll</%def>
+<%inherit file="template.mako" />
+
+<%def name="head()">
+${parent.head()}
+<script type="text/javascript" src="${PATH('/js/jquery-ui.js')}"></script>
+<script type="text/javascript" src="${PATH('/js/jquery.ui.stars.js')}"></script>
+<link rel="stylesheet" type="text/css" href="${PATH('/css/jquery.ui.stars.css')}"/>
+<link rel="stylesheet" type="text/css" href="${PATH('/css/south-street/jquery-ui.css')}"/>
+<script type="text/javascript">
+function makeRating(index, element) {
+    var rat = $(element);
+	rat.children().not("select").hide();
+
+	// Create caption element
+	var caption = $('<div id="caption">');
+	var id = rat.attr('id');
+	var messages = $('<div id="messages"/>');
+
+	// Create stars
+	rat.stars({
+		inputType: "select",
+		oneVoteOnly: true,
+		captionEl: caption,
+		callback: function(ui, type, value)
+		{
+			// Display message to the user at the begining of request
+			messages.text("Saving...").fadeIn(30);
+			$.post("poll.php", {rate: value, name: id}, function(json)
+			{
+				// Select stars from "Average rating" control to match the returned average rating value
+				ui.select(Math.round(json.avg));
+
+				// Update widget's caption
+				caption.text(" (" + json.votes + " votes; " + json.avg + ")");
+
+				// Display confirmation message to the user
+				messages.text("Thanks!").stop().css("opacity", 1).fadeIn(30);
+
+				// Hide confirmation message after 2 sec...
+				setTimeout(function(){
+					messages.fadeOut(1000)
+				}, 2000);
+
+			}, "json");
+		}
+	});
+	// Since the <option value="3"> was selected by default, we must remove this selection from Stars.
+	rat.stars("selectID", -1);
+	// Append caption element !after! the Stars
+	caption.appendTo(rat);
+	// Create element to use for confirmation messages
+	messages.appendTo(rat);
+}
+$(function(){
+    $('.rat').map(makeRating);
+});
+</script>
+<style>
+.poll-head {
+    border-bottom: 0 none;
+    padding-top: 5px;
+    text-align: center;
+}
+.poll-content {
+    border-top: 0 none;
+    padding-bottom: 10px;
+}
+.poll {
+    float:left;
+    margin:20px 10px 0px 10px;
+}
+.rat { clear:left; }
+.rat > * {float: left; line-height: 1.4em;}
+#messages, #caption {padding-left: .5em;}
+#messages {color: #fd1c24;}
+.rat-container {
+    clear: left;
+    height: 20px;
+    margin-left: 10px;
+}
+</style>
+</%def>
+
+<div style="padding:0px 80px 0px 80px">
+
+% for i in range(10):
+<div class="poll">
+    <div class="ui-widget-content ui-corner-top poll-head">
+        Название Название Название
+    </div>
+    <div class="ui-widget-content ui-corner-bottom poll-content">
+        <a class="gall" style="float:left" href="${PATH('/images/2011/photo/01.jpg')}"><img src="${PATH('/images/2011/photo/thumbnails/01.jpg')}"/></a>
+        <a class="gall" style="float:left" href="${PATH('/images/2011/photo/01.jpg')}"><img src="${PATH('/images/2011/photo/thumbnails/01.jpg')}"/></a>
+        <div class='rat-container'>
+        	<form class="rat" id="ID${i}" action="" method="post">
+        		<select name="rate">
+        				<option value="1" selected="selected" />Not so great</option>
+        				<option value="2"  />Quite good</option>
+        				<option value="3"  />Good</option>
+        				<option value="4"  />Great!</option>
+        				<option value="5"  />Excellent!</option>
+        		</select>
+        		<input type="submit" value="Rate it!" />
+        	</form>
+        </div>
+        <div style="clear:left;"></div>
+    </div>
+</div>
+% endfor
+
+<p style='clear:left'></p>
+
+<script>
+$('a.gall').lightBox();
+</script>
+
+</div>

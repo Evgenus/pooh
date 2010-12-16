@@ -22,6 +22,7 @@ ${self.head()}
             </span><span class='btn_prog'>
             </span><span class='btn_video'>
             </span><span class='btn_photo'>
+            </span><span class='btn_poll'>
             </span><span class='btn_where'>
             </span><span class='btn_cont'>
             </span><span class='btn_cont_tail'>
@@ -35,6 +36,8 @@ ${self.head()}
                     Видео
                 </span><a href='photo.html'><span class='link_photo'>
                     Фото
+                </span></a><a href='poll.html'><span class='link_poll'>
+                    Голосование
                 </span></a><a href='where.html'><span class='link_where'>
                     Как добраться?
                 </span></a><a href='contacts.html'><span class='link_cont'>
