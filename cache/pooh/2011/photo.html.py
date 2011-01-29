@@ -3,7 +3,7 @@ UNDEFINED = runtime.UNDEFINED
 __M_dict_builtin = dict
 __M_locals_builtin = locals
 _magic_number = 5
-_modified_time = 1291415360.5209999
+_modified_time = 1296332619.076
 _template_filename='D:/Work/Distributives/pooh/source/pooh/2011/photo.html'
 _template_uri='/pooh/2011/photo.html'
 _template_cache=cache.Cache(__name__, _modified_time)
@@ -34,7 +34,7 @@ def render_body(context,**pageargs):
         # SOURCE LINE 2
         __M_writer(u'\n<div style="padding:40px 0px 20px 25px">\n')
         # SOURCE LINE 4
-        for num in range(1, 60):
+        for num in range(1, 159):
             # SOURCE LINE 5
             __M_writer(u'<a class="gall" style="float:left" href="')
             __M_writer(unicode(PATH('/images/2011/photo/{0:02d}.jpg'.format(num))))

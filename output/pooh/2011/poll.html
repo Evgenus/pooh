@@ -34,7 +34,7 @@ function makeRating(index, element) {
 		{
 			// Display message to the user at the begining of request
 			messages.text("Saving...").fadeIn(30);
-			$.post("demo4.php", {rate: value, name: id}, function(json)
+			$.post("poll.php", {rate: value, name: id}, function(json)
 			{
 				// Select stars from "Average rating" control to match the returned average rating value
 				ui.select(Math.round(json.avg));
