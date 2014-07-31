@@ -1,0 +1,70 @@
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    width:  100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: black;
+}
+
+.holder {
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    position: relative;
+}
+
+.holder > div {
+    height: 600px;
+    width: 800px;
+    left: -400px;
+    top: -300px;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+#back_null {
+    background-image: url(/pooh/images/back_null.png);
+}
+
+#back_2010 {
+    background-image: url(/pooh/images/back_2010.png);
+    display: none;
+}
+
+#back_2011 {
+    background-image: url(/pooh/images/back_2011.png);
+    display: none;
+}
+
+.fore {
+    background-image: url(/pooh/images/back_mask.png);
+}
+
+#a2010 {
+    width: 126px;
+    height: 33px;
+    left: 180px;
+    top: 500px;
+    position: absolute;
+    cursor: pointer;
+    background-image: url(/pooh/images/2010.png);
+}
+
+#a2011 {
+    width: 126px;
+    height: 33px;
+    left: 500px;
+    top: 500px;
+    position: absolute;
+    background-image: url(/pooh/images/2011.png);
+}
