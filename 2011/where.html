@@ -36,9 +36,9 @@
                     Видео
                 </span><a href='photo.html'><span class='link_photo'>
                     Фото
-                </span></a><a href='poll.html'><span class='link_poll'>
+                </span></a><span class='link_poll'>
                     Голосование
-                </span></a><a href='where.html'><span class='link_where'>
+                </span><a href='where.html'><span class='link_where'>
                     Как добраться?
                 </span></a><a href='contacts.html'><span class='link_cont'>
                     Контакты
@@ -50,60 +50,7 @@
 <div>
 <h3>Время и место проведения</h3>
 Суббота, 27 ноября, 16:00-20:00, конференц-зал ГК «Турист»<br>
-ул. Р. Окипной 2<br><br>
-<script src="http://api-maps.yandex.ru/1.1/?key=AA8_10wBAAAAmfPpTAIAbuSHXBDYTg6iLCq6CwCCBINbTl4AAAAAAAAAAACO18VXaueiJaUjUWBeYoGBcxS6Mw==&wizard=constructor" type="text/javascript"></script>
-<script type="text/javascript">
-    YMaps.jQuery(window).load(function () {
-        var map = new YMaps.Map(YMaps.jQuery("#YMapsID-1043")[0]);
-        map.setCenter(new YMaps.GeoPoint(30.597957,50.451293), 17, YMaps.MapType.MAP);
-        map.addControl(new YMaps.Zoom());
-        map.addControl(new YMaps.ToolBar());
-        map.addControl(new YMaps.TypeControl());
-
-        YMaps.Styles.add("constructor#pmorlPlacemark", {
-            iconStyle : {
-                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmorl.png",
-                size : new YMaps.Point(36,41),
-                offset: new YMaps.Point(-13,-40)
-            }
-        });
-
-
-        YMaps.Styles.add("constructor#pmgrsPlacemark", {
-            iconStyle : {
-                href : "http://api-maps.yandex.ru/i/0.3/placemarks/pmgrs.png",
-                size : new YMaps.Point(19,20),
-                offset: new YMaps.Point(-7,-19)
-            }
-        });
-
-
-        YMaps.Styles.add("constructor#FF3732c85Polyline", {
-            lineStyle : {
-                strokeColor : "FF3732c8",
-                strokeWidth : 5
-            }
-        });
-       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(30.597032,50.450808), "constructor#pmorlPlacemark", "гостиница \"Турист\"<br/>ул. Р. Окипной 2"));
-       map.addOverlay(createObject("Placemark", new YMaps.GeoPoint(30.599094,50.451328), "constructor#pmgrsPlacemark", "McDonalds"));
-       map.addOverlay(createObject("Polyline", [new YMaps.GeoPoint(30.597373,50.45128),new YMaps.GeoPoint(30.59777,50.450719),new YMaps.GeoPoint(30.597375,50.450582),new YMaps.GeoPoint(30.5973,50.450646)], "constructor#FF3732c85Polyline", ""));
-
-        function createObject (type, point, style, description) {
-            var allowObjects = ["Placemark", "Polyline", "Polygon"],
-                index = YMaps.jQuery.inArray( type, allowObjects),
-                constructor = allowObjects[(index == -1) ? 0 : index];
-                description = description || "";
-
-            var object = new YMaps[constructor](point, {style: style, hasBalloon : !!description});
-            object.description = description;
-
-            return object;
-        }
-    });
-</script>
-
-<div id="YMapsID-1043" style="width:580px;height:402px"></div>
-<br><br><br>
+ул. Р. Окипной 2
 </div></div>
         <div class='footer'></div>
     </div>
