@@ -1,3 +1,5 @@
+#### In the memory of awesome things this site wil be hosted [HERE](http://evgenus.github.io/pooh/).
+
 1. Download and install Git (TortoiseGit is good)
 2. Clone my repository from path you can fing above at this page
 3. Download and install somewhere nginx for windows
